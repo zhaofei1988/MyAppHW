@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar"></include>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <everlinkintl.com.myappwh.view.CameraSurfaceView
+            android:id="@+id/cameraSurfaceView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <everlinkintl.com.myappwh.view.CameraTopRectView
+            android:id="@+id/rectOnCamera"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/takePic"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="50px"
+                android:background="@drawable/boder_rounded_6ca8cd_6ca8cd"
+                android:text="拍 照"
+                android:textColor="@color/ffffff"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+
+    </FrameLayout>
+</LinearLayout>

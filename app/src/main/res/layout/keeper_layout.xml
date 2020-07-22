@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/toolbar"></include>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <everlinkintl.com.myappwh.view.NoScrollGridView
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/keeper_gv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchMode="columnWidth"
+            android:cacheColorHint="@color/c00000000"
+            android:horizontalSpacing="1dp"
+            android:listSelector="@color/c00000000"
+            android:numColumns="2"
+            android:scrollbars="none"
+            android:verticalSpacing="1dp">
+        </everlinkintl.com.myappwh.view.NoScrollGridView>
+        <Button
+            android:layout_marginTop="20dp"
+            android:id="@+id/keeper_bt"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="40dp"
+            android:layout_height="45dp"
+            android:background="@drawable/boder_rounded_6ca8cd_6ca8cd"
+            android:text="安全退出"
+            android:textColor="@color/ffffff"
+            android:textSize="18sp" />
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

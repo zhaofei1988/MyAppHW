@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar"></include>
+
+    <LinearLayout
+        android:id="@+id/up_picture_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cffcd00"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="这次操作必须上传照片，否则会影响绩效"
+            android:textColor="@color/ffffff"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/ffffff"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="上传照片"
+                    android:textColor="@color/c666666"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="支持jpg , png 格式,单张10M以内"
+                    android:textColor="@color/dbdbdb"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/cf0f2f5"></LinearLayout>
+
+            <everlinkintl.com.myappwh.view.NoScrollGridView
+                android:id="@+id/up_picture_gridview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/ffffff"
+                android:cacheColorHint="@color/c00000000"
+                android:horizontalSpacing="10dp"
+                android:listSelector="@color/c00000000"
+                android:numColumns="3"
+                android:padding="20dp"
+                android:scrollbars="none"
+                android:verticalSpacing="10dp"></everlinkintl.com.myappwh.view.NoScrollGridView>
+
+            <EditText
+                android:gravity="top"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:id="@+id/up_picture_edt"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/ffffff"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:lineSpacingExtra="5dp"
+                android:textSize="15dp"
+                android:hint="请输入本次提交的描述，例如单子不全无法提货成功或单子完成"
+                android:textColor="@color/c000000" />
+
+            <Button
+                android:id="@+id/up_img_btn"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/boder_rounded_6ca8cd_6ca8cd"
+                android:text="上传"
+                android:textColor="@color/ffffff"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

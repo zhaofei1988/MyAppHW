@@ -1,0 +1,140 @@
+<resources>
+    <string name="app_name">恒联仓库</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="again_camera">请重新拍照</string>
+    <string name="exit">再按一次退出程序</string>
+    <string name="tts">请下载讯飞语音</string>
+    <string name="get_code">获取验证码</string>
+    <string name="second">秒</string>
+    <string name="transportation_task">历史/当前运输</string>
+    <string name="history_task">历史任务</string>
+    <string name="history_list">历史运单</string>
+    <string name="location_submit">位置上报</string>
+    <string name="qiangdan">任务列表</string>
+    <string name="message">消息</string>
+    <string name="shortcut_freightage">快捷提/送货</string>
+    <string name="modification_password_title">修改密码</string>
+    <string name="register_title">用户注册</string>
+    <string name="modification_password">修 改</string>
+    <string name="user_message">个人信息</string>
+    <string name="coder_message">条形码信息</string>
+    <string name="jump_extras">phone</string>
+    <string name="user_login">用户登录</string>
+    <string name="retrieve_password">找回密码</string>
+    <string name="customer_service_string">联系客服</string>
+    <string name="phone_num_string">0512-57358868</string>
+    <string name="feedback_string">意见反馈</string>
+    <string name="feedback_success_string">意见反馈提交成功</string>
+    <string name="select_string">请选择</string>
+    <string name="feedback_input_string">请输入反馈内容</string>
+    <string name="feedback_select_string">请选着反馈内容类型</string>
+    <string name="my_feedback">我的反馈</string>
+    <string name="version_code">系统版本</string>
+    <string name="about">关于恒联</string>
+    <string name="message_detail">消息详情</string>
+    <string name="task_detail">任务详情</string>
+    <string name="claiming_expenses">费用报销</string>
+    <string name="submit_to">提交</string>
+    <string name="task_track">行驶轨迹</string>
+    <string name="about_text">公司以建设"人性化、品牌化"作为长远的奋斗目标，秉承"诚信服务、客户至上、以人为本、团结一致"的经营理念、充分发挥公司每个员工的积极性、网络各方行业精英、联合各种优势资源，努力提高集团公司的国际化、网络化程度、加强信息化、专业化运作优势，朝着国际声誉高、驾驭市场能力强、国际一流的货运企业迈进。</string>
+    <!--阿里巴巴矢量图使用样例-->
+    <!--@BindView(R.id.test_id_tv)-->
+    <!--TextView test;-->
+    <!--test.setTypeface(iconfont);-->
+
+    <!--<TextView-->
+    <!--android:layout_below="@id/aaaa"-->
+    <!--android:id="@+id/test_id_tv"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:text="@string/icons"-->
+    <!--android:textSize="30sp"-->
+    <!--android:layout_height="wrap_content" />-->
+
+    <!--<string name="icons">&#xe62b;</string>-->
+
+    <!--  阿里矢量图库  -->
+    <string name="next">&#xe60b;</string>
+    <string name="toolbar_break">&#xe60e;</string>
+    <string name="tab_qiangdan_icon">&#xe644;</string>
+
+    <string name="tab_car_icon">&#xe608;</string>
+    <string name="tab_location_icon">&#xe60f;</string>
+    <string name="tab_message_icon">&#xe601;</string>
+    <string name="tab_user_icon">&#xe647;</string>
+    <string name="customer_service_icon">&#xe643;</string>
+    <string name="null_list_icon">&#xe641;</string>
+    <string name="search">&#xe609;</string>
+    <string name="pack_up_icon">&#xe60a;</string>
+    <string name="spread_icon">&#xe6a1;</string>
+    <string name="place_delivery_icon">&#xe689;</string>
+    <string name="driving_circuit_icon">&#xe624;</string>
+    <string name="place_arrival_icon">&#xe73f;</string>
+    <string name="close_icon">&#xe606;</string>
+    <string name="close1_icon">&#xe60c;</string>
+    <string name="add_icon">&#xe602;</string>
+    <string name="shortcut">&#xe63e;</string>
+    <string name="paizhao">&#xe622;</string>
+    <string name="shaomiao">&#xe671;</string>
+    <!--  string 列表  -->
+    <string-array name="login_string">
+        <item>登陆账号不能为空</item>
+        <item>登陆密码不能为空</item>
+    </string-array>
+    <string-array name="register_string">
+        <item>验证码不能为空</item>
+        <item>密码不能为空</item>
+        <item>手机号不能为空</item>
+        <item>重复密码不能为空</item>
+        <item>验证码格式错误，请输入6位数字</item>
+        <item>输入的手机号码格式错误</item>
+        <item>输入的密码格式错误，请输入6-20位有数字和字母组合的密码</item>
+        <item>两次输入的密码不一致</item>
+        <item>输入的手机号与验证码手机号不一致</item>
+        <item>验证码不正确</item>
+    </string-array>
+    <string-array name="user_string">
+        <item>个人信息</item>
+        <item>修改密码</item>
+        <item>联系客服</item>
+        <item>意见反馈</item>
+        <item>系统版本</item>
+        <item>关于恒联</item>
+    </string-array>
+    <string-array name="feedback_select_array">
+        <item>功能意见</item>
+        <item>页面意见</item>
+        <item>新需求</item>
+        <item>操作意见</item>
+        <item>其他</item>
+    </string-array>
+
+    <string-array name="user_string_icon">
+        <item>&#xe64f;</item>
+        <item>&#xe614;</item>
+        <item>&#xe643;</item>
+        <item>&#xe7de;</item>
+        <item>&#xe620;</item>
+        <item>&#xe61e;</item>
+    </string-array>
+    <string-array name="user_message_name">
+        <item>姓名</item>
+        <item>联系电话</item>
+        <item>身份证号</item>
+        <item>住址</item>
+        <item>车牌号</item>
+        <item>车辆信息</item>
+    </string-array>
+    <string-array name="user_message_content">
+        <item>是芬兰空军</item>
+        <item>18516530896</item>
+    </string-array>
+    <string-array name="modification_password_default">
+        <item>请输入新密码（至少6位）</item>
+        <item>请重复输入新密码</item>
+    </string-array>
+    <string name="encode_qrcode">生成二维码</string>
+    <string name="dencode_qrcode">扫描二维码</string>
+    <string name="code_text">请输入生成二维码的文本信息</string>
+    <string name="qrcodetext">这里显示扫描结果</string>
+</resources>

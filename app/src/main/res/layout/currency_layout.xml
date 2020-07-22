@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/currency_lau"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/currency_et_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/boder_rounded_6ca8cd_ffffff"
+                    android:hint="请输入入库单号"
+                    android:paddingLeft="10dp"
+                    android:selectAllOnFocus="true" />
+
+                <TextView
+                    android:id="@+id/currency_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/shaomiao"
+                    android:textColor="@color/c0076ff"
+                    android:textSize="30sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/currency_line_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/boder_rounded_6ca8cd_ffffff"
+                    android:hint="请输入行号"
+                    android:paddingLeft="10dp"
+                    android:selectAllOnFocus="true" />
+                <TextView
+                    android:id="@+id/currency_code1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/shaomiao"
+                    android:textColor="@color/c0076ff"
+                    android:textSize="30sp"></TextView>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/currency_get_detile"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/boder_rounded_6ca8cd_6ca8cd"
+                android:text="获取运单详细"
+                android:textColor="@color/ffffff"
+                android:textSize="18sp" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingRight="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="品名："
+                        android:textSize="18sp"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="剩余件数："
+                        android:textSize="18sp"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/currency_tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="13dp"
+                        android:text=""
+                        android:textColor="@color/c4169E1"
+                        android:textSize="15sp"></TextView>
+
+                    <TextView
+                        android:id="@+id/currency_surplus_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="13dp"
+                        android:text=""
+                        android:textColor="@color/c4169E1"
+                        android:textSize="15sp"></TextView>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/currency_pallet_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/boder_rounded_6ca8cd_ffffff"
+                    android:hint="请输入托盘号"
+                    android:paddingLeft="10dp"
+                    android:selectAllOnFocus="true" />
+
+                <TextView
+                    android:id="@+id/currency_code_numbutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/shaomiao"
+                    android:textColor="@color/c0076ff"
+                    android:textSize="30sp" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/currency_position"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/boder_rounded_6ca8cd_ffffff"
+                android:hint="请输入库位"
+                android:inputType="number"
+                android:digits="0123456789-"
+                android:singleLine="true"
+                android:paddingLeft="10dp"
+                android:selectAllOnFocus="true" />
+
+            <EditText
+                android:id="@+id/currency_lot"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/boder_rounded_6ca8cd_ffffff"
+                android:hint="请输入LOT1"
+                android:singleLine="true"
+                android:paddingLeft="10dp"
+                android:selectAllOnFocus="true" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/c4169E1"
+                android:text="点击下面选框选择计算方式"
+                android:textSize="18sp">
+            </TextView>
+            <Spinner
+                android:id="@+id/currency_sp"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_height="45dp"
+                android:background="@drawable/boder_rounded_6ca8cd_ffffff">
+            </Spinner>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/currency_pin_size1"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="7"
+                    android:background="@drawable/boder_rounded_6ca8cd_ffffff"
+                    android:hint="pan_size"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:paddingLeft="10dp"
+                    android:selectAllOnFocus="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="X"
+                    android:textSize="18sp"></TextView>
+
+                <EditText
+                    android:id="@+id/currency_pin_size2"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="7"
+                    android:background="@drawable/boder_rounded_6ca8cd_ffffff"
+                    android:hint="箱数"
+                    android:singleLine="true"
+                    android:inputType="number"
+                    android:paddingLeft="10dp"
+                    android:selectAllOnFocus="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="="
+                    android:textSize="18sp"></TextView>
+
+                <EditText
+                    android:id="@+id/currency_into_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="6"
+                    android:background="@drawable/boder_rounded_6ca8cd_ffffff"
+                    android:hint="入库数量"
+                    android:singleLine="true"
+                    android:inputType="number"
+                    android:paddingLeft="10dp"
+                    android:selectAllOnFocus="true" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/currency_into_date"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/boder_rounded_6ca8cd_ffffff"
+                android:hint="请输入入库日期"
+                android:singleLine="true"
+                android:paddingLeft="10dp"
+                android:selectAllOnFocus="true" />
+
+
+
+            <Button
+                android:id="@+id/currency_ok_btn"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/boder_rounded_6ca8cd_6ca8cd"
+                android:text="确认入库"
+                android:textColor="@color/ffffff"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

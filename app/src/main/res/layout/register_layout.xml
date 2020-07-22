@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/toolbar"></include>
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:orientation="vertical"
+     android:paddingLeft="20dp"
+     android:paddingRight="20dp"
+     android:paddingTop="30dp"
+     android:background="@color/ffffff"
+     android:paddingBottom="30dp"
+     android:layout_height="wrap_content">
+
+     <EditText
+         android:id="@+id/register_phone_et"
+         android:layout_width="match_parent"
+         android:layout_height="45dp"
+         android:inputType="phone"
+         android:maxLength="11"
+         android:background="@drawable/boder_rounded_6ca8cd_ffffff"
+         android:hint="请输手机号"
+         android:paddingLeft="10dp" />
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:orientation="horizontal"
+         android:layout_marginTop="20dp"
+         android:layout_height="wrap_content">
+         <EditText
+             android:id="@+id/register_code_et"
+             android:layout_width="match_parent"
+             android:layout_height="45dp"
+             android:inputType="number"
+             android:background="@drawable/boder_rounded_6ca8cd_ffffff"
+             android:hint="请输入验证码"
+             android:maxLength="6"
+             android:layout_weight="1"
+             android:paddingLeft="10dp" />
+         <Button
+             android:id="@+id/register_code_btn"
+             android:layout_width="110dp"
+             android:layout_height="45dp"
+             android:layout_marginLeft="20dp"
+             android:background="@drawable/boder_rounded_6ca8cd_6ca8cd"
+             android:text="获取验证码"
+             android:textColor="@color/ffffff"
+             android:textSize="18sp"
+             />
+     </LinearLayout>
+     <EditText
+         android:id="@+id/register_password_et"
+         android:layout_marginTop="20dp"
+         android:layout_width="match_parent"
+         android:layout_height="45dp"
+         android:inputType="textPassword"
+         android:background="@drawable/boder_rounded_6ca8cd_ffffff"
+         android:hint="请输密码"
+         android:maxLength="20"
+         android:paddingLeft="10dp" />
+     <TextView
+         android:layout_width="match_parent"
+         android:paddingTop="2dp"
+         android:text="* 请输入6-20位有数字和字母组合的密码"
+         android:textSize="13sp"
+         android:textColor="@color/c4169E1"
+         android:layout_height="wrap_content" />
+     <EditText
+         android:id="@+id/register_repetition_password_et"
+         android:layout_marginTop="15dp"
+         android:layout_width="match_parent"
+         android:layout_height="45dp"
+         android:inputType="textPassword"
+         android:background="@drawable/boder_rounded_6ca8cd_ffffff"
+         android:hint="请输重新密码"
+         android:maxLength="20"
+         android:paddingLeft="10dp" />
+     <TextView
+         android:layout_width="match_parent"
+         android:paddingTop="2dp"
+         android:text="* 两次输入的密码请保持一致"
+         android:textSize="13sp"
+         android:textColor="@color/c4169E1"
+         android:layout_height="wrap_content" />
+ </LinearLayout>
+    <Button
+        android:id="@+id/register_btn"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/boder_rounded_6ca8cd_6ca8cd"
+        android:text="注册"
+        android:textColor="@color/ffffff"
+        android:textSize="18sp" />
+</LinearLayout>
